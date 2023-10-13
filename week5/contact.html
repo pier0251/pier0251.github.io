@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lolo's Shop - Contact U+s</title>
+</head>
+
+<body>
+    <!--thisis ahtml-->
+    <!--CTRL/commamd+/tp add or rempove a cp\rred-->
+    <!--site header-->
+    <header>
+        <h1>Lolo's Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="contact.html"> Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- starting the main content -->
+
+    <main>
+        <!-- adding table for hours  -->
+        <h2> Contact Us</h2>
+        <table border>
+            <caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon-Fri</td>
+                    <td>6AM-9PM</td>
+                </tr>
+                <tr>
+
+                    <td>Sat</td>
+                    <td>8AM-11PM</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>Close</td>
+                </tr>
+            </tbody>
+
+            </caption>
+
+        </table>
+        <!-- adding a section for a contact form -->
+        <section>
+            <h3>We would love to hear from you</h3>
+            <!-- adding a form -->
+            <form action="thank.html" method="post">
+                <div>
+
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div>
+
+                    <label for="">Email</label>
+                    <input type="email" id="youremail" name="youremail" placeholder="algonquin email"
+                        value="@algonquinlive.com" required>
+                </div>
+                <div>
+
+                    <label for="">Message</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="ticlets">Haw many ticlets? &#40;sold in pairs&#41;</label>
+                    <input type="number" id="ticlets" name="ticlets" min="2" max="10" step="2" value="2">
+                </div>
+                <div><label for="row">Row</label>
+                    <select name="row" id="row">
+                    <option name="fron">Front Row</option>
+                    <option name="center" selected>Center Row</option>
+                    <option name="back">Back Row</option>
+                </select>
+                </div>
+                <div>
+                    <h3>Have you been here before?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="past" id="yes">
+
+                    <label for="no">No</label>
+                    <input type="radio" name="past" id="no">
+
+
+
+                </div>
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" name="policies" id="policies" required>
+                    <label for="policies">I agree</label>
+                </div>
+                <button type="submit"> sudmit</button>
+            </form>
+
+        </section>
+    </main>
+    <!-- site footer -->
+    <footer>
+        <!-- speciltty symbols for HTML entities can be found by googeling HTML entities -->
+        &copy;Copyright Lolo shop, 2023
+    </footer>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
