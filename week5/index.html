@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lolo's Shop - Home</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <h1>Lolo's Shop</h1>
         <nav>
             <ul>
-                <li><a href="index.html"> Home</a></li>
+                <li><a href="index.html" class="current"> Home</a></li>
                 <li><a href="contact.html"> Contact us</a></li>
             </ul>
         </nav>
@@ -24,7 +25,7 @@
 
     <main>
         <!-- adding an on page link -->
-        <a href="Treat of the week">Treat of the week</a>
+        <a href="Treat of the week" class="blue-link">Treat of the week</a>
         <!-- artical of the page. can be a standalone -->
         <article>
             <h2>Our story</h2>
@@ -39,6 +40,7 @@
             </p>
             <blockquote>
                 We love lolo!!! <cite>- jojo</cite>
+
             </blockquote>
             <hr>
             <Section>
@@ -66,9 +68,10 @@
             </ol>
         </section>
         <!-- adding a section for a description list -->
-        <section id="Treatoftheweek">
-            <h3>Treat of the week</h3>
-            <dl>
+        <section id="treatoftheweek">
+            
+            <h3 class="white-text">Treat of the week</h3>
+            <dl class="white-text">
                 <dt>Name</dt>
                 <dd>Baby brownie</dd>
                 <dt>Colories</dt>
@@ -89,36 +92,37 @@
                 </dd>
             </dl>
             <!-- adding a external link -->
-            <a href="https://www.ricardocuisine.com/en/recipes/5017-classic-brownies" targget="_black"> get the recipe a></a>
+            <a href="https://www.ricardocuisine.com/en/recipes/5017-classic-brownies" targget="_black"
+                class="blue-link"> get the recipe a></a>
         </section>
         <section>
-        <!-- adding a section for menu table -->
-        <h3> Menu specials</h3>
-        <table border>
-            <thead>
-                <tr>
-                    <th colspan="2">Items</th>
-                    <th rowspan="2">Price</th>
-                </tr>
-                <tr>
-                    <th>Name</th>
-                    <th>Calories</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Baby brownie</td>
-                    <td>250</td>
-                    <td>&dollar;8.00</td>
-                </tr>
-                <tr>
-                    <td>Oatmeal</td>
-                    <td>110</td>
-                    <td>&dollar;6.00</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+            <!-- adding a section for menu table -->
+            <h3> Menu specials</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Items</th>
+                        <th rowspan="2">Price</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Baby brownie</td>
+                        <td>250</td>
+                        <td>&dollar;8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oatmeal</td>
+                        <td>110</td>
+                        <td>&dollar;6.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <!-- site footer -->
     <footer>
