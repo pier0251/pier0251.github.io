@@ -1,0 +1,186 @@
+/* 
+This is a css coment
+short cut for adding a comment is ctrl + /
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(11, 42, 11);
+    /* adding backgroud immage  */
+    background-image: url(../images/white_brick_wall.png);
+}
+
+/* cooment box model ex */
+section p {
+    width: 50%;
+    /* 2 values = first val -top/bottom | sec val left/right */
+    padding: 1rem .5rem;
+    /* 4 valus = top bottom left right*/
+    margin: -1em 2em 2em 2em ;
+border-bottom: 2px solid black;
+
+}
+
+.container{
+max-width: 1200px;
+margin:0 auto;
+
+}
+
+img {
+width: 100%;
+}
+
+h1 {
+    color: rgb(148, 105, 212);
+
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+/* selecting multi elements */
+h1,
+h2,
+h3,
+h4,
+    {
+
+    text-decorathion: underline;
+}
+
+/* select the child element */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+nav ul a {
+    color: rgb(145, 103, 183);
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 (html font six=ze)  = 16px * 1.5 = 26 */
+    display: block;
+}
+
+/* selecting elements with id value */
+/* try to avoid ids for style */
+#treatoftheweek {
+    /* background-color: cadetblue; */
+    /* color image repeat position-x p-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1.25 x 16px = 20px */
+    padding: 1em;
+    /* 1 X 20px (element font size = 20px*/
+    /* veiwport base unite*/
+    /* width: 100vw  */
+    width: 50%;
+}
+
+.blue-link {
+    background-color: darkslategrey;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+
+.large-text {
+    font-size: 24px;
+
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* combinators */
+/* direct child selector */
+article>p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/*  adjacent sibling selector -select the element that is the vary next sibling to the selected element if exist */
+h3+ul {
+    border: 1px solid black;
+}
+
+/* sibling selector */
+h1~p {
+    text-transform: uppercase;
+}
+
+/* attrubute selector */
+[href="treatoftheweek"] {
+    font-weight: bold;
+}
+
+[src$=".jpg"] {
+    border: 4px solid darkslategray;
+}
+
+/* using psuedo classes */
+/* styling the nav */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* horizantal, vertical, blur, spread, color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2 px black;
+}
+
+/* position selectors */
+/* first-child last-child */
+aside ul li:first-child {
+    font-weight: bold;
+
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* styling the table */
+table {
+    border-collapse: collapse;
+}
+
+/* add child selector even/odd */
+tbody tr :nth-child(even) {
+    /* hex color value with 6 characters */
+    background-color: #d5836d;
+}
+
+table th:nth-child(n) table td:nth-child(n) {
+    border: 1px solid #000;
+}
+
+/* using a formula in nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0.2);
+}
+
+/* specificity */
+/* formula: inline style, id, class, tag-name */
+/*     0      0       0        0              */
+/* 0000 */
