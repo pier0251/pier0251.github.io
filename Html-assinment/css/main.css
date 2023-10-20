@@ -1,0 +1,72 @@
+header,
+footer {
+    background-color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(109, 23, 33);
+}
+
+
+.square-list li:nth-child(odd) {
+    background-color: rgb(0, 0, 0);
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+.square-list {
+    list-style-type: square;
+}
+
+h1,
+h2,
+h3,
+h4,
+    {text-decorathion: underline;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: rgb(120, 30, 39);
+    text-decoration: none;
+}
+
+.site-title {
+    color: rgb(166, 17, 17);
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a {
+    background-color: #e0e0e0;
+    border: 1px solid black;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
+    nav a:hover, nav a:focus{
+        background-color:#640d0d ;
+    color: black;
+    }
+
+   
