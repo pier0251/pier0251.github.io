@@ -1,0 +1,126 @@
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+nav ul a {
+    color: rgb(9, 21, 15);
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+
+av ul li {
+    border-bottom: 1px solid #000000; /* Add a bottom border with a color */
+    padding: 10px; /* Add padding for spacing */
+}
+
+nav ul li:last-child {
+    border: none; /* Remove the border from the last <li> */
+}
+
+body{
+ max-width: max-content;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#wsf {
+    max-width: 100%;
+    align-self: flex-start;
+}
+
+footer {
+    align-self: flex-end;
+}
+
+
+main {
+    flex-grow: 1;
+}
+
+nav ul{
+    font-size: bold;
+}
+
+nav ul{
+    font-size: x-large;
+}
+
+
+
+main {
+    background-color: #cff4ef;
+}
+body {
+    background-color: #aad4cf;
+  }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed for spacing */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000; /* Adjust the color as needed */
+}
+
+img#sf {
+    width: 120px; /
+    height: auto; 
+    float: left; 
+    margin-right: 20px;
+}
+
+
+
+/* fix this
+ body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    text-align: left;
+}
+*/
+
+
+
+form label,
+form input,
+form textarea {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
