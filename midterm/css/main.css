@@ -1,4 +1,26 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+nav li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed for spacing */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000; /* Adjust the color as needed */
+}
+
+nav ul{
+    font-size: bold;
+}
+
+nav ul{
+    font-size: x-large;
+}
 
 nav ul{
     display: flex;
@@ -22,6 +44,16 @@ nav ul a {
     font-size: 1.5rem;
     display: block;
 }
+    
+
+
+
+
+
+
+
+
+
 
 av ul li {
     border-bottom: 1px solid #000000; /* Add a bottom border with a color */
@@ -35,6 +67,7 @@ nav ul li:last-child {
 body{
  max-width: max-content;
 }
+
 
 body {
     display: flex;
@@ -50,22 +83,13 @@ body {
     align-self: flex-start;
 }
 
-footer {
-    align-self: flex-end;
-}
 
 
 main {
     flex-grow: 1;
 }
 
-nav ul{
-    font-size: bold;
-}
 
-nav ul{
-    font-size: x-large;
-}
 
 
 
@@ -76,21 +100,6 @@ body {
     background-color: #aad4cf;
   }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 10px; /* Adjust the margin as needed for spacing */
-}
-
-nav a {
-    text-decoration: none;
-    color: #000; /* Adjust the color as needed */
-}
 
 img#sf {
     width: 120px; /
@@ -124,3 +133,6 @@ form textarea {
     margin-bottom: 10px; 
 }
 
+footer {
+    align-self: flex-end;
+}
