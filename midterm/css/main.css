@@ -18,6 +18,8 @@ nav ul{
     font-size: bold;
 }
 
+
+
 nav ul{
     font-size: x-large;
 }
@@ -48,7 +50,10 @@ nav ul a {
 
 
 
-
+.radio-options {
+    display: inline-block;
+    margin-right: 10px;
+}
 
 
 
@@ -65,28 +70,25 @@ nav ul li:last-child {
 }
 
 body{
- max-width: max-content;
-}
-
-
-body {
-    display: flex;
+    /* display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
+    margin: 0; */
 }
 
 #wsf {
     max-width: 100%;
     align-self: flex-start;
+
 }
 
 
 
 main {
-    flex-grow: 1;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 
@@ -100,6 +102,11 @@ body {
     background-color: #aad4cf;
   }
 
+  .box{
+    width: 100;
+    
+  }
+
 
 img#sf {
     width: 120px; /
@@ -110,14 +117,7 @@ img#sf {
 
 
 
-/* fix this
- body { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+
 
 main {
     text-align: left;
