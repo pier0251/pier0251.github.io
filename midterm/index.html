@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
 
-<header>
-    <meta charset="UTF-8">
-    <title id="title">Lone Starfish</title>
-    <img src="./images/lone-starfish-wide.jpg" alt="wide Starfish" id="wsf">
-    <link rel="stylesheet" href="./css/main.css">
-   
-</header>
+
+<head>
+    <title>Midterm</title> 
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="./css/main.css"> 
+</head>
+
+
 
 <body>
-    <main>
+    <header class="site-title">
+        <img src="./images/lone-starfish-wide.jpg" alt="wide Starfish" id="wsf"> <!-- An image element with an ID -->
+        <h1>Lone Starfish</h1>
+        <!-- Navigation menu -->
         <nav>
             <ul>
+                
                 <li> <a href="title">Home</a></li>
                 <li> <a href="h1">story</a></li>
                 <li><a href="h3">Contact Us</a></li>
             </ul>
         </nav>
+    </header>
+
+    <main>
+
         <article>
-            <h1 id="h1"> Life of a Starfish</h1>
-            <img src="./images/lone-starfish.jpg" alt="image of a Starfish" id="sf">
-            <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa
+            <!-- Heading for the main content -->
+            <h2> Life of a Starfish</h2> 
+            <img src="./images/lone-starfish.jpg" alt="image of a Starfish" id="sf"> <!-- An image of a starfish -->
+            <p>
+                <!-- Main content -->
+                Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
+                catalufa
                 silver
                 driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian
                 prowfish
@@ -51,56 +64,59 @@
             <h2>
                 Facts About Starfish
             </h2>
+            <!-- Unordered list with class "square-list" -->
             <ul class="square-list">
+
                 <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
                 <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
                 <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
                 <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
             </ul>
         </article>
-        <h3 id="h3">Contact Us To Learn More</h3>
+        <div class="container">
+             <!-- Heading for the contact section -->
+             <h3>Contact Us To Learn More</h3>
+            <!-- Contact form -->
+            <form action="submit_contact_form.php" method="post">
+                
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
 
-        <form action="submit_contact_form.php" method="post">
-            <div>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
+                <h4>Would You Like To Visit the Starfish</h4>
+                <div class="radio-options">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="past" id="yes">
+                </div>
+                <div class="radio-options">
+                    <label for="no">No</label>
+                    <input type="radio" name="past" id="no">
+                </div>
+                <div class="radio-options">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" name="past" id="maybe">
+                </div>
+                <input type="submit" value="Send" class="custom-button">
+            </form>
+        </div>
 
-            <h4>Would You Like To Visit the Starfish</h4>
-            <div class="radio-options">
-                <label for="yes">Yes</label>
-                <input type="radio" name="past" id="yes">
-            </div>
-            <div class="radio-options">
-                <label for="no">No</label>
-                <input type="radio" name="past" id="no">
-            </div>
-            <div class="radio-options">
-                <label for="maybe">Maybe</label>
-                <input type="radio" name="past" id="maybe">
-            </div>
-            <input type="submit" value="Send">
-        </form>
-
-
-
-
-
+         <!-- Copyright notice -->
+       <footer>
+    <!-- Footer section -->
+    &copy;Copyright LoneStarfhish
+    
+</footer>
     </main>
-
-
 </body>
 
-<footer>
-    &copy;Copyright LoneStarfhish
-</footer>
 
 </html>
