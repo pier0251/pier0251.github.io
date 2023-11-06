@@ -1,89 +1,89 @@
 nav li {
     display: inline-block;
-    margin-right: 10px; /* Add right margin to separate list items */
+    margin-right: 10px; 
 }
 
 nav a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #000; /* Set link text color */
+    text-decoration: none; 
+    color: #000; 
 }
 
 nav ul {
-    font-size: bold; /* Invalid CSS property, you can use font-weight instead */
-    font-size: x-large; /* Set the font size to x-large */
+    font-size: bold; 
+    font-size: x-large; 
     display: flex;
     margin-top: 20px;
-    margin: 0; /* Overriding the previous margin-top, you might want to remove this line */
-    list-style: none; /* Remove the default list style */
+    margin: 0; 
+    list-style: none;
     padding: 0;
 }
 
 /* Styling for each list item in the navigation */
 nav ul li {
     display: inline-block;
-    width: 49%; /* Define the width of list items */
+    width: 49%;
     padding: 1em;
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    border-right: 1px solid #000; /* Add a right border to separate list items */
-    text-align: center; /* Center the text horizontally */
-    text-transform: uppercase; /* Convert text to uppercase */
+    box-sizing: border-box; 
+    border-right: 1px solid #000; 
+    text-align: center; 
+    text-transform: uppercase; 
 }
 
 nav ul a {
     color: rgb(9, 21, 15);
-    text-decoration: none; /* Remove underlines from links */
+    text-decoration: none; 
     font-size: 1.5rem;
-    display: block; /* Make links block-level for easier styling */
-    border: right; /* This line has no effect, you might want to remove it */
-    border: left; /* This line has no effect, you might want to remove it */
+    display: block; 
+    border: right; 
+    border: left; 
 }
 
 .radio-options {
     display: inline-block;
-    margin-right: 10px; /* Add right margin to separate radio options */
+    margin-right: 10px; 
 }
 
 /* Styling for unordered list items */
 av ul li {
-    border-bottom: 1px solid #000000; /* Add a bottom border to separate list items */
+    border-bottom: 1px solid #000000; 
     padding: 10px;
 }
 
 nav ul li:last-child {
-    border: none; /* Remove the border from the last list item */
+    border: none;
 }
 
 #wsf {
     max-width: 100%;
-    align-self: flex-start; /* Align the image to the flex-start within its container */
+    align-self: flex-start; 
 }
 
 main {
-    padding: 0 10px; /* Add padding to the main content */
+    padding: 0 10px; 
 }
 
 h1 {
     position: absolute;
     top: 10%;
     left: 40%;
-    color: white; /* Position and style the h1 element */
+    color: white; 
 }
 
 .texerea {
-    width: bold; /* Invalid CSS property, you can use font-weight instead */
+    width: bold; 
 }
 
 html {
-    background-color: #aad4cf; /* Set the background color for the entire document */
+    background-color: #aad4cf; 
 }
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: block; /* Change to "block" for the body element */
-    align-items: center; /* Align the body's children vertically to the center */
+    display: block; 
+    align-items: center; 
     max-width: 1024px;
-    margin: 0 auto; /* Center the content horizontally */
-    text-align: left; /* Set the text alignment to left */
+    margin: 0 auto; 
+    text-align: left; 
     margin-bottom: 0;
     background-color: #cff4ef;
     margin-top: 0;
@@ -91,8 +91,8 @@ body {
 
 #name, #email, textarea {
     width: 100%;
-    resize: none; /* Prevent textarea resizing */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    resize: none; 
+    box-sizing: border-box; 
 }
 
 .container {
@@ -106,24 +106,22 @@ body {
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 0%;
-    cursor: pointer; /* Change the cursor on hover to indicate interactivity */
+    cursor: pointer; 
 }
 
 img#sf {
-    width: 120px; /* Correct the style declaration */
-    height: auto; /* Maintain the image's aspect ratio */
-    float: left; /* Float the image to the left with some margin */
+    width: 120px;
+    height: auto;
+    float: left; 
     margin-right: 20px;
 }
 
 /* Styling for form labels, inputs, and textareas */
-form label,
-form input,
-form textarea {
+form label, form input, form textarea {
     display: block;
-    margin-bottom: 10px; /* Add spacing between form elements */
+    margin-bottom: 10px; 
 }
 
 footer {
-    text-align: right; /* Align the content to the right within the footer */
+    text-align: right; 
 }
