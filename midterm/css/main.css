@@ -1,19 +1,19 @@
 nav li {
     display: inline-block;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 nav a {
-    text-decoration: none; 
-    color: #000; 
+    text-decoration: none;
+    color: #000;
 }
 
 nav ul {
-    font-size: bold; 
-    font-size: x-large; 
+    font-size: bold;
+    font-size: x-large;
     display: flex;
     margin-top: 20px;
-    margin: 0; 
+    margin: 0;
     list-style: none;
     padding: 0;
 }
@@ -23,29 +23,29 @@ nav ul li {
     display: inline-block;
     width: 49%;
     padding: 1em;
-    box-sizing: border-box; 
-    border-right: 1px solid #000; 
-    text-align: center; 
-    text-transform: uppercase; 
+    box-sizing: border-box;
+    border-right: 1px solid #000;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 nav ul a {
     color: rgb(9, 21, 15);
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 1.5rem;
-    display: block; 
-    border: right; 
-    border: left; 
+    display: block;
+    border: right;
+    border: left;
 }
 
 .radio-options {
     display: inline-block;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 /* Styling for unordered list items */
 av ul li {
-    border-bottom: 1px solid #000000; 
+    border-bottom: 1px solid #000000;
     padding: 10px;
 }
 
@@ -55,44 +55,46 @@ nav ul li:last-child {
 
 #wsf {
     max-width: 100%;
-    align-self: flex-start; 
+    align-self: flex-start;
 }
 
 main {
-    padding: 0 10px; 
+    padding: 0 10px;
 }
 
 h1 {
     position: absolute;
     top: 10%;
     left: 40%;
-    color: white; 
+    color: white;
 }
 
 .texerea {
-    width: bold; 
+    width: bold;
 }
 
 html {
-    background-color: #aad4cf; 
+    background-color: #aad4cf;
 }
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: block; 
-    align-items: center; 
+    display: block;
+    align-items: center;
     max-width: 1024px;
-    margin: 0 auto; 
-    text-align: left; 
+    margin: 0 auto;
+    text-align: left;
     margin-bottom: 0;
     background-color: #cff4ef;
     margin-top: 0;
 }
 
-#name, #email, textarea {
+#name,
+#email,
+textarea {
     width: 100%;
-    resize: none; 
-    box-sizing: border-box; 
+    resize: none;
+    box-sizing: border-box;
 }
 
 .container {
@@ -106,22 +108,24 @@ body {
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 0%;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 img#sf {
     width: 120px;
     height: auto;
-    float: left; 
+    float: left;
     margin-right: 20px;
 }
 
 /* Styling for form labels, inputs, and textareas */
-form label, form input, form textarea {
+form label,
+form input,
+form textarea {
     display: block;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 footer {
-    text-align: right; 
+    text-align: right;
 }
