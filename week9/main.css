@@ -1,0 +1,179 @@
+/****************************** 
+      cosustum styles 
+*******************************/
+/******* global style *********/
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+img {
+    width: 100%;
+
+}
+
+/* LoVe HAte - Link visited hover/focus, Active */
+
+a,
+a:link,
+a:visited{
+    color: inherit;
+}
+
+a:hover,
+a:focus{
+    color: 00add8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+
+}
+/* hpps://modualcale.com/ */
+h1{
+    font-size: 5.0rem;
+
+}
+h2{
+    font-size: 3.37rem;
+
+}
+h3{
+    font-size: 2.25rem;
+
+}
+h4{
+    font-size: 1.5rem;
+
+}
+h5 {
+    font-size: 1rem;
+}
+
+p{
+    margin: 1em 0;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/************ HEADER **************/
+ 
+.mob-logo{
+    max-width: 150px;
+
+}
+
+.desk-logo{
+    display: none;
+}
+
+.banner{
+    height: 600px;
+    display: none;
+    background: gray url(../week9/images/week-9-images/smog-mobile.jpg) no-repeat center bottom;
+    background-size: cover;
+
+}
+
+.banner h1{
+    margin: 0;
+    padding-top: 250px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #00add8;
+    border-radius: 8px;
+
+}
+.btn:hover,
+.btn:focus{
+    background-color: #00add8;
+    color: #00add8;
+}
+
+
+/****************** FOOTER *****************/
+
+.site-footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top:2px solid #00add8 ;
+}
+
+.copy{
+    text-align: right;
+}
+
+/*********************************************** 
+                 DESK TOP STYLES
+***********************************************/
+@media screen and (min-width:600px) {
+    html{
+        font-size: 16px;
+    }
+    .mob-logo{
+        display: none;
+    }
+
+    .desk-logo{
+        display: inline-block;
+        max-width: 300px;
+
+    }
+.banner{
+    background-image: url(../week9/images/week-9-images/smog-desktop.jpg);
+
+}
+
+.banner h1 {
+    color: white;
+}
+
+
+
+/******************* app section *******************/
+
+.app img{
+    width: 40%;
+    float: left;
+    margin-right: 1em;
+}
+
+.app .btn{
+    float: right;
+}
+
+
+}
