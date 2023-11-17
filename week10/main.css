@@ -3,28 +3,29 @@
 *******************************/
 /******* global style *********/
 
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
 
-body{
+body {
     line-height: 1.5;
 
 }
 
 *,
 *:after,
-*:before{
+*:before {
     box-sizing: inherit;
 }
 
-.clearfix::after{
+.clearfix::after {
     content: '';
     display: table;
     clear: both;
 }
+
 img {
     width: 100%;
 
@@ -34,12 +35,12 @@ img {
 
 a,
 a:link,
-a:visited{
+a:visited {
     color: inherit;
 }
 
 a:hover,
-a:focus{
+a:focus {
     color: 00add8;
 }
 
@@ -52,49 +53,55 @@ h5 {
     margin: 1em 0 0.5em;
 
 }
+
 /* hpps://modualcale.com/ */
-h1{
+h1 {
     font-size: 5.0rem;
 
 }
-h2{
+
+h2 {
     font-size: 3.37rem;
 
 }
-h3{
+
+h3 {
     font-size: 2.25rem;
 
 }
-h4{
+
+h4 {
     font-size: 1.5rem;
 
 }
+
 h5 {
     font-size: 1rem;
 }
 
-p{
+p {
     margin: 1em 0;
 
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
 }
 
 /************ HEADER **************/
- 
-.mob-logo{
+
+.mob-logo {
     max-width: 150px;
 
 }
 
-.desk-logo{
+.desk-logo {
     display: none;
 }
 
-.banner{
+.banner {
     height: 600px;
     display: none;
     background: gray url(../week9/images/week-9-images/smog-mobile.jpg) no-repeat center bottom;
@@ -102,14 +109,50 @@ p{
 
 }
 
-.banner h1{
+.banner h1 {
     margin: 0;
     padding-top: 250px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.btn{
+
+/*********NAV************/
+.nav-list li {
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+/* LoVe HAte */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover .nav-list a:focus .nav-list a.current {
+    background-color: #00add8;
+    color: inherit;
+}
+
+/******** action list ********/
+.action-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.action-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+
+.btn {
     text-decoration: none;
     display: inline-block;
     padding: 20px;
@@ -117,8 +160,9 @@ p{
     border-radius: 8px;
 
 }
+
 .btn:hover,
-.btn:focus{
+.btn:focus {
     background-color: #00add8;
     color: #00add8;
 }
@@ -129,10 +173,10 @@ p{
 .site-footer {
     margin-top: 20px;
     padding: 20px 0;
-    border-top:2px solid #00add8 ;
+    border-top: 2px solid #00add8;
 }
 
-.copy{
+.copy {
     text-align: right;
 }
 
@@ -140,40 +184,65 @@ p{
                  DESK TOP STYLES
 ***********************************************/
 @media screen and (min-width:600px) {
-    html{
+    html {
         font-size: 16px;
     }
-    .mob-logo{
+
+    .mob-logo {
         display: none;
     }
 
-    .desk-logo{
+    .desk-logo {
         display: inline-block;
         max-width: 300px;
 
     }
-.banner{
-    background-image: url(../week9/images/week-9-images/smog-desktop.jpg);
 
+    .banner {
+        background-image: url(../week9/images/week-9-images/smog-desktop.jpg);
+
+    }
+
+    .banner h1 {
+        color: white;
+    }
+
+    /***********nav***********/
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+        border: none;
+        border-right: 1px solid gray;
+
+    }
+
+    .nav-list li:last-child {
+        border: none;
+    }
+
+
+    /******************* app section *******************/
+
+    .app img {
+        width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .app .btn {
+        float: right;
+    }
 }
+/*****************
+ MEDIA QURRY 800px
+******************/
 
-.banner h1 {
-    color: white;
-}
-
-
-
-/******************* app section *******************/
-
-.app img{
-    width: 40%;
-    float: left;
-    margin-right: 1em;
-}
-
-.app .btn{
-    float: right;
-}
-
-
+@media screen and(min-width:800px){
+    .action-list li{
+        max-width: 20%;
+    }
 }
