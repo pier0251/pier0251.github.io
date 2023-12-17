@@ -1,365 +1,332 @@
- /* Global styles */
-
-
- .container {
+/* Global styles */
+html {
    font-family: 'Open Sans', sans-serif;
    font-size: 16px;
-   font-weight: 2em;
    margin: 0;
    padding: 0;
    display: grid;
    grid-template-rows: auto;
 }
 
-
-
-
-
-
-
-
- /* Header styles */
-
-
- .header-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    background-color: #222;
-    line-height: 1.5;
-    padding: 30px;
- }
-
-
-
- #img1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-
- }
-
-
-
-
-
-
-
-
- /* Navigation styles */
-
- .nav-list {
-    color: #c78c06;
- }
-
-
-
- nav ul a {
-    color: #c78c06;
-    text-decoration: none;
- }
-
-
- nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
- }
-
-
- nav a {
-    text-decoration: none;
-    border: 1px solid #222;
-    padding: 5px 10px;
-    display: inline-block;
-    margin: 5px;
-    font-size: 25px;
- }
-
-
- nav a:hover,
- nav a:focus {
-    background-color: #c78c06;
-    color: #222;
-    padding: 5px 10px;
- }
-
- textarea {
-    width: 100%;
-    resize: none;
-    box-sizing: border-box;
-    width: bold;
- }
-
-
-
- /* .fa-solid fa-magnifying-glass{ 
-   padding: 20px 20px 20px 20px;
+/* Header styles */
+.header-banner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 300px;
+   background-color: #222;
+   line-height: 1.5;
+   padding: 30px;
 }
-*/
 
+#img1 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 20px;
+}
 
- /* Search bar styles */
+/* Navigation styles */
+.nav-list {
+   color: #c78c06;
+}
 
+nav ul li a {
+   display: flex;
+   flex-direction: column;
+}
 
- #message {
-    display: flex;
+nav,
+ul,
+a {
+   color: #c78c06;
+   text-decoration: none;
+}
 
- }
+nav,
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
 
+nav,
+a {
+   text-decoration: none;
+   border: 1px solid #222;
+   padding: 5px 10px;
+   display: inline-block;
+   margin: 5px;
+   font-size: 25px;
+}
 
+nav a:hover,
+nav a:focus {
+   background-color: #c78c06;
+   color: #222;
+   padding: 5px 10px;
+}
 
+textarea {
+   width: 100%;
+   resize: none;
+   box-sizing: border-box;
+}
 
+/* Search bar styles */
+.fa-search {
+   border: solid #c78c06;
+   color: #c78c06;
+   background-color: #222;
+   padding: 5px;
+}
 
+/* Welcome banner styles */
+.welcome-banner {
+   background-image: url("/final-project/images/main-banner.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 1000px;
+   background-attachment: fixed;
+   background-attachment: scroll;
+   overflow: hidden;
+}
 
- /* Welcome banner styles */
+.welcome-banner h1 {
+   margin-bottom: 50px;
+}
 
+#home {
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+   display: inline-block;
+   flex-direction: column;
+   justify-content: left;
+   height: 500px;
+   margin: 100px 0px 50px 0px;
+   color: white;
+}
 
- .welcome-banner {
-    background-image: url("/final-project/images/main-banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 1000px;
-    background-attachment: fixed;
-    background-attachment: scroll;
-    overflow-clip-margin: content-box;
-    overflow: clip;
- }
+.welcome-button {
+   transition: 0.3s;
+   display: inline-block;
+   color: #222;
+   border: 2px solid #c78c06;
+   background-color: #c78c06;
+   padding: 10px;
+   border-radius: 0%;
+   cursor: pointer;
+   font-size: 1em;
+}
 
+/* About Us section styles */
+#about-us {
+   background-color: #ffe6ac;
+   padding: 20px 20px;
+}
 
-
- .welcome-banner h1 {
-    margin-bottom: 50px;
-
- }
-
-
-
- /* My welcom page */
-
-
-
- #home {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    display: inline-block;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    height: 500px;
-    margin: 100px 0px 50px 0px;
-    color: white;
- }
-
-
-
-
-
-
- /* BODY */
-
-
-
- body{
+/* Body styles */
+body {
    display: grid;
    grid-template-rows: auto;
-   
- }
+}
 
- h1, h2, h3{
+h1,
+h2,
+h3 {
    padding: 20px 10px;
- }
- h1 {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 100px;
+}
 
- }
+h1 {
+   display: inline-block;
+   font-weight: bold;
+   font-size: 100px;
+}
 
- h2 {
-    display: block;
-    font-size: 35px;
-    font-weight: bold;
+h2 {
+   display: block;
+   font-size: 35px;
+   font-weight: bold;
+}
 
- }
+h3 {
+   display: block;
+   font-size: 25px;
+   font-weight: bold;
+}
 
- h3 {
-    display: block;
-    font-size: 25px;
-    font-weight: bold;
-
- }
-
- #img2  
-    {
-    padding: 20px 20px;
-    width: 100%;
-    height: auto;
- }
-
- #img3, #img4, #img5, #img6, #img7, #img8, #img9{
+#img2 {
+   padding: 20px 20px;
    width: 100%;
-    height: auto;
- }
+   height: auto;
+}
 
+#img3,
+#img4,
+#img5,
+#img6,
+#img7,
+#img8,
+#img9 {
+   width: 100%;
+   height: auto;
+}
 
+/* Card styles (For multiple sections) */
+.banner {
+   background-color: #ffe6ac;
+   margin-bottom: 50px;
+}
 
- #contact {
-    margin: 30px;
- }
+.banner p {
+   margin: 30px;
+   font-size: 30px;
+}
 
+button {
+   border: none;
+   margin: 0;
+   padding: 20px;
+   font: inherit;
+   color: inherit;
+   background: none;
+   cursor: pointer;
+   outline: none;
+}
 
+.banner p {
+   margin-top: 20px;
+}
 
+h1,
+h2,
+h3 {
+   font-weight: 600;
+}
 
+.vision-banner {
+   background-image: url("/final-project/images/vision.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-attachment: scroll;
+   overflow: clip;
+   color: #ffffff;
+   height: max-content;
+}
 
- /* Card styles (common to multiple sections) */
- .banner {
-    background-color: #ffe6ac;
-    margin: 20px;
- }
+.vision-banner h3 {
+   padding: 20px;
+   font-size: 2em;
+}
 
-.banner p{
+.vision-banner p {
    margin: 20px;
 }
 
- button {
-    border: none;
-    margin: 0;
-    padding: 20px;
-    font: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    outline: none;
- }
+.service-button {
+   padding: 10px 20px;
+   transition: 0.3s;
+   display: inline-block;
+   color: #ffffff;
+   border: 2px solid #222;
+   background-color: #222;
+   padding: 10px;
+   border-radius: 0%;
+   cursor: pointer;
+}
 
- .banner p {
-    margin-top: 20px;
-    /* Add margin to create space above the paragraph */
- }
+.fa-solid {
+   margin-left: 10px;
+}
 
+/* Table styles */
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
 
- .vision-banner {
-    background-image: url("/final-project/images/vision.jpg");
-    padding: 20px 20px;
-    width: 100%;
-    height: auto;
-    color: #ffffff;
-    background-repeat: no-repeat;
-    
- }
- .vision-banner h3{
-   padding: 20px;
-   font-size: 2em;
- }
+caption {
+   text-align: left;
+   padding: 10px;
+   font-size: 25px;
+   font-weight: bold;
+}
 
+th {
+   background-color: #ffe6ac;
+}
 
- .service-button {
-    padding: 10px 20px;
-    transition: 0.3s;
-    display: inline-block;
-    color: #ffffff;
-    border: 2px solid #222;
-    background-color: #222;
-    padding: 10px;
-    border-radius: 0%;
-    cursor: pointer;
+th,
+td {
+   border: 1px solid #222;
+   padding: 8px;
+   text-align: left;
+}
 
+/* Team card banner */
+#team-card hr {
+   color: #c78c06;
+}
 
- }
+/* Form styles */
+form label,
+form input,
+form textarea {
+   display: block;
+   margin-bottom: 10px;
+}
 
+/* Contact us styles */
+#contact-us h2 {
+   padding: 5px;
+}
 
+.form-button {
+   padding: 10px 20px;
+   transition: 0.3s;
+   display: inline-block;
+   color: #c78c06;
+   border: 2px solid #222;
+   background-color: #222;
+   padding: 10px;
+   border-radius: 0%;
+   cursor: pointer;
+}
 
+#contact {
+   margin: 30px;
+}
 
-
- /* table */
-
- table {
-    border-collapse: collapse;
-    width: 100%;
-
- }
-
- caption {
-    text-align: left;
-    padding: 10px;
-    font-size: 25px;
-    font-weight: bold;
-
- }
-
- th {
-    background-color: #ffe6ac;
- }
-
- th,
- td {
-    border: 1px solid #222;
-    /* Adjust the border color as needed */
-    padding: 8px;
-    text-align: left;
- }
-
- /* About Us section styles */
- #about-us {
-    background-color: #ffe6ac;
-    padding: 20px 20px;
- }
-
-
- form label,
- form input,
- form textarea {
-    display: block;
-    margin-bottom: 10px;
- }
-
- /* contact us */
- #contact h2 {
-    padding: 5px;
- }
-
-
- .custom-button {
-    border: 2px solid #222;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    border-radius: 0%;
-    cursor: pointer;
- }
-
- /* FOOTER */
- footer{
+/* Footer styles */
+footer {
    background-color: #222;
    color: #c78c06;
-   /* max-width: 1200px; */
- }
+}
 
+footer a {
+   font-size: 1em;
+}
 
-
- /* MED Q DESk */
-
- @media screen and (min-width: 760px) {
+/* Media query for larger screens */
+@media screen and (min-width: 760px) {
    .container {
-       max-width: 1200px;
-       display: flex;
-       flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto;
    }
 
-   nav {
-       display: flex;
-       flex-direction: column;
-       margin: 10px;
+   nav ul li a {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
    }
 
+   #Search {
+      display: flex;
+      flex-direction: row;
+   }
 
-
-
-
-
-
-   
+   #team-card {
+      display: grid;
+   }
 }
